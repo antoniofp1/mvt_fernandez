@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="familiares"
+        <tr>
+           <b>Lista de familiares:</b>
+            {% for per_familia in familiares %}
+            <p><b>Nombre:</b> {{ per_familia.nombre }}</p>
+            <p><b>Fecha de nacimiento:</b> {{ per_familia.fechaNac }}</p>
+            <p><b>DNI:</b> {{ per_familia.dni }}</p>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
