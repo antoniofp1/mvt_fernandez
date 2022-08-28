@@ -3,5 +3,5 @@ from familiares import probar_template
 
 
 urlpatterns = [
-    path('familiares/', probar_template),
+    path('', probar_template),
 ]
